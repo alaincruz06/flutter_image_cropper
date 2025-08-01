@@ -1,15 +1,15 @@
-group 'vn.hunghd.flutter.plugins.imagecropper'
-version '1.0-SNAPSHOT'
+group = 'vn.hunghd.flutter.plugins.imagecropper'
+version = '1.0-SNAPSHOT'
 
 buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven { url = 'https://jitpack.io' }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath 'com.android.tools.build:gradle:8.11.1'
     }
 }
 
@@ -17,7 +17,7 @@ rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven { url = 'https://jitpack.io' }
     }
 }
 
@@ -26,7 +26,7 @@ apply plugin: 'com.android.library'
 android {
     // Conditional for compatibility with AGP <4.2.
     if (project.android.hasProperty("namespace")) {
-        namespace 'vn.hunghd.flutter.plugins.imagecropper'
+        namespace  = 'vn.hunghd.flutter.plugins.imagecropper'
     }
     compileSdkVersion 33
 
@@ -38,7 +38,7 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-	    implementation "com.github.Yalantis:uCrop:release~2.2.11-e4f77ccc7b-1"
+	    implementation "com.github.Yalantis:uCrop:release~2.2.11-9cf9237362-1"
         implementation 'androidx.preference:preference:1.2.1'
     }
 }
