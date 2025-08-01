@@ -40,7 +40,7 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.yalantis:ucrop:release/2.2.11-SNAPSHOT'
+	    implementation("com.github.Yalantis:uCrop:release~2.2.11-SNAPSHOT")
         implementation 'androidx.preference:preference:1.2.1'
     }
 }
